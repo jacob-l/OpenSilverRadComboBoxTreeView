@@ -1,0 +1,70 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <NoXamlPreprocessor>True</NoXamlPreprocessor>
+    <OpenSilverType>4</OpenSilverType>
+    <PublishTrimmed>true</PublishTrimmed>
+    <BlazorEnableCompression>false</BlazorEnableCompression>
+    <!-- SIMD does not work for Safari, so it is disabled by default -->
+    <WasmEnableSIMD>false</WasmEnableSIMD>
+    <!-- Uncomment to enable AOT compilation when publishing -->
+    <!--<RunAOTCompilation>true</RunAOTCompilation>-->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.*" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.*" PrivateAssets="all" />
+    <PackageReference Include="OpenSilver" Version="1.2.0-preview-2023-06-19-131321-6916328e" />
+  </ItemGroup>
+
+  <PropertyGroup>
+     <DisableImplicitNamespaceImports>True</DisableImplicitNamespaceImports>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OpenSilverRadComboBoxTreeView\OpenSilverRadComboBoxTreeView.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TrimmableAssembly Include="Telerik.Windows.Controls.Chart" />
+    <TrimmableAssembly Include="Telerik.Windows.Controls.Charting" />
+    <TrimmableAssembly Include="Telerik.Windows.Controls.Data" />
+    <TrimmableAssembly Include="Telerik.Windows.Controls.DataVisualization" />
+    <TrimmableAssembly Include="Telerik.Windows.Controls.Diagrams" />
+    <TrimmableAssembly Include="Telerik.Windows.Controls.Diagrams.Extensions" />
+    <!--<TrimmableAssembly Include="Telerik.Windows.Controls" /> -->
+    <TrimmableAssembly Include="Telerik.Windows.Controls.Docking" />
+    <TrimmableAssembly Include="Telerik.Windows.Controls.DomainServices" />
+    <TrimmableAssembly Include="Telerik.Windows.Controls.FixedDocumentViewers" />
+    <TrimmableAssembly Include="Telerik.Windows.Controls.FixedDocumentViewersUI" />
+    <TrimmableAssembly Include="Telerik.Windows.Controls.GanttView" />
+    <TrimmableAssembly Include="Telerik.Windows.Controls.GridView" />
+    <TrimmableAssembly Include="Telerik.Windows.Controls.ImageEditor" />
+    <!-- <TrimmableAssembly Include="Telerik.Windows.Controls.Input" /> -->
+    <TrimmableAssembly Include="Telerik.Windows.Controls.MediaPlayer" />
+    <!--<TrimmableAssembly Include="Telerik.Windows.Controls.Navigation" />-->
+    <TrimmableAssembly Include="Telerik.Windows.Controls.RibbonView" />
+    <TrimmableAssembly Include="Telerik.Windows.Controls.RichTextBoxUI" />
+    <TrimmableAssembly Include="Telerik.Windows.Controls.ScheduleView" />
+    <TrimmableAssembly Include="Telerik.Windows.Data" />
+    <TrimmableAssembly Include="Telerik.Windows.Diagrams.Core" />
+    <TrimmableAssembly Include="Telerik.Windows.Documents.Core" />
+    <TrimmableAssembly Include="Telerik.Windows.Documents" />
+    <TrimmableAssembly Include="Telerik.Windows.Documents.Fixed" />
+    <TrimmableAssembly Include="Telerik.Windows.Documents.FormatProviders.Html" />
+    <TrimmableAssembly Include="Telerik.Windows.Documents.FormatProviders.MsRichTextBoxXaml" />
+    <TrimmableAssembly Include="Telerik.Windows.Documents.FormatProviders.OpenXml" />
+    <TrimmableAssembly Include="Telerik.Windows.Documents.FormatProviders.Pdf" />
+    <TrimmableAssembly Include="Telerik.Windows.Documents.FormatProviders.Rtf" />
+    <TrimmableAssembly Include="Telerik.Windows.Documents.FormatProviders.Xaml" />
+    <TrimmableAssembly Include="Telerik.Windows.Documents.Proofing" />
+    <TrimmableAssembly Include="Telerik.Windows.PersistenceFramework" />
+    <TrimmableAssembly Include="Telerik.Windows.Scheduling.Core" />
+    <TrimmableAssembly Include="Telerik.Windows.Zip" />
+    <TrimmableAssembly Include="KendoUI.Common" />
+    <TrimmableAssembly Include="KendoUI.Windows.Controls.GridView" />
+    <TrimmableAssembly Include="KendoUI.Grid" />
+    <TrimmableAssembly Include="System.Private.ServiceModel" />
+  </ItemGroup>
+</Project>
